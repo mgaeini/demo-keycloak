@@ -14,7 +14,7 @@ Note: This will create the new keycloak client "order" with two client roles: AD
 4.2) Under the option "Role Mappings->Client Roles", select the "order" as client <br/>
 4.3) Assign the client roles "ADMIN" and "USER" to this user. <br/>
 5) Repeat steps 4.1 to 4.3 to create another user (Dave). However, only assign the client role "USER" to this user.
-6) Start the spring boot project and visit <a ref="http://localhost:8082/swagger-ui.html">home page</a> <br/>
+6) Start the spring boot project, open a new browser session and visit <a href="http://localhost:8082/swagger-ui.html">home page</a>. You should be redirected to keycloak login page on first visit.<br/>
 6.1) As Bob: you are able to visit localhost:8082/swagger-ui.html, read orders (/GET /orders) and create order (/post /orders) <br/>
 6.2) As Dave: you are able to visit localhost:8082/swagger-ui.html, read orders (/GET /orders) but NOT authorized to create an order (/post /orders) <br/>
 
